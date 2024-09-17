@@ -1,5 +1,7 @@
 # Video Generation for V2MIDI
 
+## Overview
+
 This folder contains the code responsible for large-scale video generation in the V2MIDI project. It transforms MIDI files and their corresponding Parseq/Deforum configurations into synchronized, AI-generated videos.
 
 ## Contents
@@ -48,10 +50,6 @@ The script generates:
 
 - MP4 video files that are synchronized with the input MIDI data.
 - A neatly organized output directory that corresponds to the structure of the input dataset.
-
-## Notes
-
-This code is designed for large-scale video processing and requires significant computational power, typically run on multi-GPU systems or supercomputers. It is a part of the V2MIDI project, which aims to create AI-generated videos synchronized with MIDI-based music.
 
 ## Requirements
 
