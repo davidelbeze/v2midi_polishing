@@ -2,7 +2,7 @@
 
 ## Overview
 
-This folder contains the code responsible for large-scale video generation in the V2MIDI project. It transforms MIDI files and their corresponding Parseq/Deforum configurations into synchronized, AI-generated videos.
+This folder contains the code responsible for large-scale video generation: it transforms MIDI files and their corresponding Parseq/Deforum configurations into synchronized, AI-generated videos.
 
 ## Contents
 
@@ -18,7 +18,7 @@ This folder contains the code responsible for large-scale video generation in th
 
 2. **Video Generation** (`main_video_generation.py`):
    - Manages the distribution of video generation tasks across multiple GPUs.
-   - Processes the Parseq configurations, creating videos using Stable Diffusion and Deforum.
+   - Processes the Parseq/Deforum configurations, creating videos using Stable Diffusion and Deforum.
    - Includes error handling and job recovery to ensure smooth execution.
 
 3. **Deforum Settings** (`new_deforum_settings.txt`):
@@ -29,7 +29,7 @@ This folder contains the code responsible for large-scale video generation in th
 
 - Efficient parallel processing utilizing multiple GPUs.
 - Robust error recovery system to handle any issues during video generation.
-- Integration with Stable Diffusion and Deforum for producing high-quality, AI-driven videos.
+- Integration with Stable Diffusion and Deforum for producing high-quality AI videos.
 - Customizable video generation settings to suit different artistic needs.
 
 ## Usage
@@ -41,7 +41,7 @@ This folder contains the code responsible for large-scale video generation in th
 ## Customization
 
 - **SLURM Job Settings**: Modify GPU allocation and job arrays in `v2midi_dataset.slurm` to suit your computational setup.
-- **Deforum Settings**: Adjust video parameters, such as resolution or animation style, by editing `new_deforum_settings.txt`.
+- **Deforum Settings**: Adjust video parameters (resolution, animation style, etc.) by editing `new_deforum_settings.txt`.
 - **Job Distribution**: Customize the error handling and task distribution logic in `main_video_generation.py` to fine-tune performance.
 
 ## Output
@@ -56,4 +56,4 @@ The script generates:
 - A SLURM-enabled cluster or supercomputer.
 - PyTorch with CUDA support for GPU acceleration.
 - Installed versions of Stable Diffusion and Deforum.
-- Access to a dataset of MIDI files paired with Parseq configurations.
+- Access to a dataset of MIDI files paired with Parseq/Deforum configurations.
