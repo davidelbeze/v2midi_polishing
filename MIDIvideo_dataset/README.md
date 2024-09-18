@@ -2,7 +2,9 @@
 
 ## Overview
 
-This folder contains essential components and examples for creating the MIDIvideo dataset, or adapting the code to create your custom version of it! The dataset pairs MIDI files with AI-generated videos, offering a unique resource for research into audio-visual synchronization using AI.
+This folder contains essential components and examples for creating the MIDIvideo dataset, or adapting the code to create your custom version of it! 
+
+The dataset pairs MIDI files with AI-generated videos, offering a unique resource for research into audio-visual synchronization using AI.
 
 ## Folder Structure
 
