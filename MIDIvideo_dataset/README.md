@@ -2,15 +2,15 @@
 
 ## Overview
 
-This folder contains essential components and examples for creating the MIDIvideo dataset, which is part of the V2MIDI project. The dataset pairs MIDI files with AI-generated videos, offering a unique resource for research into audio-visual synchronization using AI.
+This folder contains essential components and examples for creating the MIDIvideo dataset, or adapting the code to create your custom version of it! The dataset pairs MIDI files with AI-generated videos, offering a unique resource for research into audio-visual synchronization using AI.
 
 ## Folder Structure
 
 - **`MIDI2ParseqDeforum/`**: Code for converting MIDI files into Parseq/Deforum configurations.
 - **`video_generation/`**: Scripts for large-scale video generation using these configurations.
-- **`examples/`**: Sample videos and corresponding MIDI exports, showcasing various resolutions and styles.
+- **`examples/`**: Sample videos and corresponding MIDI exports, with various resolutions and styles.
 
-## Key Components
+## Key Components (more details in the subfolders)
 
 1. **MIDI2ParseqDeforum**:
    - Converts MIDI files into Parseq/Deforum configurations.
@@ -18,7 +18,7 @@ This folder contains essential components and examples for creating the MIDIvide
    - Includes randomized visual prompts to enhance diversity.
 
 2. **video_generation**:
-   - Generates synchronized videos using Stable Diffusion and Deforum.
+   - Generates synchronized videos (from these Parseq/Deforum configurations) using Stable Diffusion and Deforum.
    - Employs multi-GPU processing for efficiency.
    - Includes job scheduling and error recovery mechanisms.
 
@@ -26,15 +26,15 @@ This folder contains essential components and examples for creating the MIDIvide
    - Demonstrates different video outputs, ranging in resolution and visual styles.
    - Includes MP3 exports of MIDI files for quick reference and playback.
 
-## Usage
-
-1. Begin by using the **MIDI2ParseqDeforum** scripts to generate configurations.
-2. Then, run the **video_generation** scripts to create synchronized video outputs.
-3. Refer to the **examples** folder for inspiration and to see the outputs in action.
-
 ## Dataset Specifications
 
-While the examples folder provides videos in various resolutions and styles, the final MIDIvideo dataset used for training the V2MIDI model is standardized at 256x256 resolution for consistency.
+While the examples folder provides videos in various resolutions and styles, our final MIDIvideo dataset used for training the initial V2MIDI models is standardized at 256x256 resolution.
+
+## Usage
+
+1. Begin by using the **MIDI2ParseqDeforum** scripts to generate configurations from a dataset of MIDI files.
+2. Then, run the **video_generation** scripts to create synchronized video outputs.
+3. Check the **examples** folder for inspiration and to see the outputs in action.
 
 ## Getting Started
 
@@ -53,9 +53,7 @@ The complete MIDIvideo dataset, containing all paired MIDI files and their synch
 
 🔗 [V2MIDI Dataset on Hugging Face](https://huggingface.co/datasets/obvious-research/V2MIDI)
 
-On the Hugging Face page, you can find:
+You'll find there:
 - Detailed information about the dataset structure.
 - Instructions on how to download and use the dataset.
 - Guidelines for working with the dataset in your own projects.
-
-The examples and scripts provided here demonstrate how the dataset is created and include sample outputs, but to access the full dataset, please visit the Hugging Face repository.
